@@ -17,6 +17,7 @@ fi
 # Update .zshrc
 if echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 then
+    source $HOME/.zshrc
     echo "Seting dotfiles alias... done"
 fi
 
