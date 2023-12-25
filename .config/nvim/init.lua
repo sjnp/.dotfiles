@@ -57,6 +57,11 @@ require("lazy").setup({
         },
     },
     {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        opts = {}
+    },
+    {
         'navarasu/onedark.nvim',
         priority = 1000,
         config = function()
