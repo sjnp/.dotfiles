@@ -28,6 +28,7 @@ map <leader>ss <Action>(FindInPath)
 map <leader>sf <Action>(SearchEverywhere)
 
 """ Normal Mode Mapping
+nmap <C-o> :action Back<CR>
 nmap <leader>rc <Action>(ReformatCode)
 nmap <leader>ri <Action>(OptimizeImports)
 nmap <leader>rd <Action>(SafeDelete)
