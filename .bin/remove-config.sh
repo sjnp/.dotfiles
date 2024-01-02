@@ -18,6 +18,11 @@ then
 	echo "Removing tmux config... done"
 fi
 
+if rm $HOME/.ideavimrc
+then
+    echo "Removing ideavim config... done"
+fi
+
 if rm $HOME/LICENSE && rm $HOME/README.md
 then
 	echo "Removing license and readme files... done"
