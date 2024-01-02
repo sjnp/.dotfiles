@@ -1,0 +1,42 @@
+""" USEFUL LINKS
+" - List of commands -> https://jb.gg/h38q75
+" - IdeaVim plugins -> https://jb.gg/ideavim-plugins
+" - Map IDE actions to IdeaVim -> https://jb.gg/abva4t
+
+""" .ideavimrc examples -> https://jb.gg/share-ideavimrc
+
+let mapleader=" "
+
+""" Common Settings
+set scrolloff=5
+set incsearch
+set showmode
+set ignorecase
+set smartcase
+set commentary
+
+" Yank to clipboard
+set clipboard+=unnamed
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+map <leader>ss <Action>(FindInPath)
+map <leader>sf <Action>(SearchEverywhere)
+
+""" Normal Mode Mapping
+nmap <leader>rc <Action>(ReformatCode)
+nmap <leader>ri <Action>(OptimizeImports)
+nmap <leader>rd <Action>(SafeDelete)
+nmap <leader>rn <Action>(RefactoringMenu)
+nmap <leader>tw <Action>(ActivateTerminalToolWindow)
+nmap K <Action>(ShowHoverInfo)
+nmap gt <Action>(GotoTypeDeclaration)
+nmap gI <Action>(GotoImplementation)
+nmap gr <Action>(ShowUsages)
+
+""" Insert Mode Mapping
+inoremap jk <ESC>
