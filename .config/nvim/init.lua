@@ -7,6 +7,10 @@ local vmap = function (keys, func, opts)
     vim.keymap.set("v", keys, func, opts)
 end
 
+local imap = function (keys, func, opts)
+   vim.keymap.set("i", keys, func, opts)
+end
+
 vim.g.mapleader = " "
 
 -- [[ Lazy.nvim ]]
@@ -89,6 +93,7 @@ require("lazy").setup({
 
 -- [[ Remap ]]
 nmap("<leader>ex", vim.cmd.Ex, {})
+imap("jk", "<Esc>", {})
 
 -- [[ Plugin ]]
 -- Telescope
