@@ -66,6 +66,11 @@ require("lazy").setup({
         opts = {}
     },
     {
+        'numToStr/Comment.nvim',
+        opts = {},
+        lazy = false,
+    },
+    {
         'navarasu/onedark.nvim',
         priority = 1000,
         config = function()
@@ -194,6 +199,9 @@ cmp.setup {
         { name = "luasnip" },
     },
 }
+
+-- Comment.nvim
+require('Comment').setup()
 
 -- [[ Set ]]
 vim.opt.nu = true
