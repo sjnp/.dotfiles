@@ -1,0 +1,18 @@
+import = []
+
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[env]
+
+[window]
+dynamic_padding = true
+decorations = "None"
+startup_mode = "Maximized"
+
+[scrolling]
+
+[font]
+normal = { family = "MesloLGS NF", style = "Regular"}
+size = 10
