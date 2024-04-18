@@ -3,9 +3,9 @@ then
 	echo "Removing .dotfiles directory... done"
 fi
 
-if rm -rf $HOME/.bin
+if rm -rf $HOME/.sh
 then
-	echo "Removing .bin directory... done"
+	echo "Removing .sh directory... done"
 fi
 
 if rm $HOME/.config/nvim/init.lua
