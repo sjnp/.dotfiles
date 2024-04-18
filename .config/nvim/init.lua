@@ -127,7 +127,7 @@ end, {})
 -- Treesitter
 vim.defer_fn(function()
     require("nvim-treesitter.configs").setup {
-        ensure_installed = { "lua", "go", "rust" },
+        ensure_installed = { "lua", "go", "rust", "python" },
         auto_install = false,
         highlight = {
             enable = true,
@@ -137,8 +137,12 @@ end, 0)
 
 -- LSP
 local servers = {
+    lemminx = {},
+    html = {},
+    tsserver = {},
     gopls = {},
     rust_analyzer = {},
+    pyright = {},
     lua_ls = {
         Lua = {
             diagnostics = { globals = {"vim"} },
