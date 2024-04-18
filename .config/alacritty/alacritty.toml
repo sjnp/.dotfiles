@@ -16,3 +16,6 @@ startup_mode = "Maximized"
 [font]
 normal = { family = "MesloLGS NF", style = "Regular"}
 size = 10
+
+[colors.primary]
+background = "#1f2329"

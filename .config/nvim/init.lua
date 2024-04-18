@@ -76,9 +76,6 @@ require("lazy").setup({
         config = function()
             require('onedark').setup {
                 style = 'darker',
-                colors = {
-                    bg0 = "#1e2127",
-                },
             }
             require('onedark').load()
         end,
