@@ -71,13 +71,10 @@ require("lazy").setup({
         lazy = false,
     },
     {
-        'navarasu/onedark.nvim',
+        'folke/tokyonight.nvim',
         priority = 1000,
-        config = function()
-            require('onedark').setup {
-                style = 'darker',
-            }
-            require('onedark').load()
+        init = function()
+            vim.cmd.colorscheme 'tokyonight-night'
         end,
     },
     {
@@ -85,7 +82,7 @@ require("lazy").setup({
         opts = {
             options = {
                 icons_enabled = true,
-                theme = 'onedark',
+                theme = 'tokyonight',
                 component_separators = '|',
                 section_separators = '',
             },
@@ -105,6 +102,8 @@ nmap("<leader>ex", vim.cmd.Ex, {})
 imap("jk", "<Esc>", {})
 
 -- [[ Plugin ]]
+-- vim.cmd[[colorscheme tokyonight-night]]
+
 -- Telescope
 local telescope_builtin = require("telescope.builtin")
 nmap("<leader>sf", telescope_builtin.find_files, {})
