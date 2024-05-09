@@ -8,12 +8,17 @@ then
 	echo "Removing .sh directory... done"
 fi
 
-if rm $HOME/.config/nvim/init.lua
+if rm -rf $HOME/.config/nvim
 then
 	echo "Removing neovim config... done"
 fi
 
-if rm $HOME/.config/tmux/tmux.conf
+if rm -rf $HOME/.config/wezterm
+then
+	echo "Removing wezterm config... done"
+fi
+
+if rm -rf $HOME/.config/tmux
 then
 	echo "Removing tmux config... done"
 fi
