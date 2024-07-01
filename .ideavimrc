@@ -14,9 +14,11 @@ set showmode
 set ignorecase
 set smartcase
 set commentary
+set surround
+set NERDTree
 
 " Yank to clipboard
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 "" Map <leader>d to start debug
 "map <leader>d <Action>(Debug)
