@@ -26,8 +26,8 @@ set clipboard+=unnamedplus
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
 
-map <leader>ss <Action>(FindInPath)
-map <leader>sf <Action>(SearchEverywhere)
+nmap <leader>ss <Action>(FindInPath)
+nmap <leader>sf <Action>(SearchEverywhere)
 
 """ Normal Mode Mapping
 nmap <C-o> :action Back<CR>
@@ -40,6 +40,9 @@ nmap K <Action>(ShowHoverInfo)
 nmap gt <Action>(GotoTypeDeclaration)
 nmap gI <Action>(GotoImplementation)
 nmap gr <Action>(ShowUsages)
+
+""" NERDTree
+map <leader>nt :NERDTree<CR>
 
 """ Insert Mode Mapping
 inoremap jk <ESC>
