@@ -30,5 +30,6 @@ fi
 
 if sed -i.bak "/alias dotfiles=/d" $HOME/.zshrc
 then
+    source $HOME/.zshrc
 	echo "Removing dotfiles alias from .zshrc... done"
 fi
