@@ -13,11 +13,6 @@ then
 	echo "Removing neovim config... done"
 fi
 
-if rm -rf $HOME/.config/wezterm
-then
-	echo "Removing wezterm config... done"
-fi
-
 if rm -rf $HOME/.config/tmux
 then
 	echo "Removing tmux config... done"
