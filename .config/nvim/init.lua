@@ -138,7 +138,7 @@ end, 0)
 local servers = {
     lemminx = {},
     html = {},
-    tsserver = {},
+    ts_ls = {},
     gopls = {},
     rust_analyzer = {},
     pyright = {},
